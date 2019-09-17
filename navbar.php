@@ -19,7 +19,8 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">PAGINA INICIAL</a></li>
                 <li><a href="#">MEU PERFIL</a></li>
-                <li><a data-target="modal1" class="btn modal-trigger" href="#"><i class="medium material-icons">person</i></a></li>
+                <!--modal-->
+                <li><a data-target="modal1" class="btn modal-trigger" href="#modal1"><i class="medium material-icons">person</i></a></li>
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                         <h4>Modal Header</h4>
@@ -29,14 +30,16 @@
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
                     </div>
                 </div>
+                <!--fim modal-->
                 <li><a href="#"><i class="medium material-icons">person_add</i></a></li>
             </ul>
         </div>
     </nav>
-    <script type="text/javascript" scr="js/main.js">
-    </script>
-    <script type="text/javascript" src="js/materialize.js">
-    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
 </body>
 
 </html>
