@@ -9,9 +9,14 @@
 
 <body>
     <nav>
+        <!--conexao com o banco-->
+        <?php
+        require_once 'conexao.php'
+        ?>
 
         <div class="nav-wrapper">
 
+            <!--Menu-->
             <img src="img/logofogo.png" class="logo">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">PAGINA INICIAL</a></li>
@@ -32,7 +37,7 @@
                         ?>
                     </div>
                 </div>
-                <!--fim modal-->
+                <!--fim modal login-->
 
                 <!--modal Cadastro-->
                 <li><a data-target="modal2" class="modal-trigger" href="#modal2"><i class="medium material-icons">person_add</i></a></li>
@@ -41,24 +46,27 @@
                         <!-- inicio do cadastro-->
                         <h1>Cadastre-se</h1>
                         <form method="POST" action="" enctype="multipart/form-data">
-
+                            <!-- input name-->
                             <input type="text" name="nome" autocomplete="off" placeholder="Insira seu nome">
+                            <!-- input sexo-->
                             <select class="browser-default SelectSexo" name="sexo">
                                 <option value="" disabled selected>Selecione seu Sexo</option>
                                 <option value="m">Masculino</option>
                                 <option value="f">Feminino</option>
                             </select>
+                            <!-- input email-->
                             <input type="email" autocomplete="off" name="email" placeholder="E-mail">
+                            <!-- input senha-->
                             <input type="password" name="senha" placeholder="Senha">
                             <br><br>
+                            <!-- finalizar cadastro-->
                             <input type="submit" value="Finalizar Cadastro" name="fimCadastro" id="btnLogar" class="btn btnFinalizar right"> <br>
                         </form>
                         <!-- fim do cadastro-->
-                        <?php
-                        ?>
+
                     </div>
                 </div>
-                <!--fim modal-->
+                <!--fim modal cadastro-->
             </ul>
         </div>
     </nav>
@@ -71,3 +79,24 @@
 </body>
 
 </html>
+
+<?php
+//cadastro
+
+if (isset($_POST["fimCadastro"])) {
+    $nome = $_POST['nome'];
+    $sexo = $_POST['sexo'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $query = "INSERT INTO `website`.`usuario` (`nomeUsuario`, `nivel`, `statusUsuario`, `sexo`, `email`, `senha`) 
+                            VALUES ('$nome', '1', '1', '$sexo', '$email', '$senha')";
+
+    $queryexec = mysqli_query($conexao, $query);
+    echo    "<script>
+                    alert('Cadastro finalizado');
+                    location.href = 'index.php';
+            </script>";
+}
+
+?>
