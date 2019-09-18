@@ -1,12 +1,50 @@
-.nav-wrapper{
-    background-color:#363636;
-    
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+body {
+    background-color: #a1a1a1;
+}
 
+.nav-wrapper {
+    background-color: #202020;
 }
-ul li a{
-    color:#00CDCD;
-   font-size: 20px;
+
+ul li a {
+    font-family: 'Bangers', cursive;
+    color: rgb(255, 129, 4);
+    font-size: 25px;
 }
-.foca{
-    background-size:20px;
+
+#modal1 {
+    background-color: #363636;
+    width: 350px;
+}
+
+option:hover {
+    background-color: #363636;
+}
+
+#modal2 {
+    background-color: #363636;
+    width: 400px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(255, 166, 0);
+    text-align: center
+}
+
+#btnLogar {
+    color: white;
+    background-color: black
+}
+
+input {
+    color: white
+}
+
+.logo {
+    width: 45px;
+    height: 65px;
+    margin-left: 80px;
 }
