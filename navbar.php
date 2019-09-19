@@ -19,7 +19,7 @@
             <!--Menu-->
             <img src="img/logofogo.png" class="logo">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li> <a class="brand-logo center" >Dev Fire</a></li>
+                <li> <a class="brand-logo center">DevFire</a></li>
                 <!--modal Login-->
                 <li><a data-target="modal1" class="modal-trigger" href="#modal1"><i class="medium material-icons">person</i></a></li>
                 <div id="modal1" class="modal">
@@ -39,6 +39,7 @@
                 <!--fim modal login-->
 
                 <!--modal Cadastro-->
+
                 <li><a data-target="modal2" class="modal-trigger" href="#modal2"><i class="medium material-icons">person_add</i></a></li>
                 <div id="modal2" class="modal">
                     <div class="modal-content">
@@ -53,11 +54,23 @@
                                 <option value="m">Masculino</option>
                                 <option value="f">Feminino</option>
                             </select>
+
                             <!-- input email-->
                             <input type="email" autocomplete="off" name="email" placeholder="E-mail">
                             <!-- input senha-->
                             <input type="password" name="senha" placeholder="Senha">
-                            <br><br>
+                            <br>
+                            <h6> Qual sistema operacional você usa ?</h6>
+                            <p>
+                                <label>
+                                    <input name="group1" type="radio" autofocus="none" />
+                                    <span>Linux</span>
+                                </label>
+                                <label>
+                                    <input name="group1" type="radio" autofocus="none" />
+                                    <span>Windows</span>
+                                </label>
+                            </p>
                             <!-- finalizar cadastro-->
                             <input type="submit" value="Finalizar Cadastro" name="fimCadastro" id="btnLogar" class="btn btnFinalizar right"> <br>
                         </form>
@@ -81,7 +94,6 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-
 
 </body>
 
