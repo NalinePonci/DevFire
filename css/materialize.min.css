@@ -8231,7 +8231,8 @@ input[type=range]::-ms-thumb {
 }
 
 .carousel .carousel-item>img {
-    width: 100%
+    width: 100%;
+    margin-top: -100px;
 }
 
 .carousel .indicators {
@@ -8249,7 +8250,7 @@ input[type=range]::-ms-thumb {
     cursor: pointer;
     height: 8px;
     width: 8px;
-    margin: 24px 4px;
+    /* margin: 24px 4px; */
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition: background-color .3s;
     transition: background-color .3s;

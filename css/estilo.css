@@ -2,10 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 body {
     background-color: #a1a1a1;
+    overflow: hidden;
+    background-image: url(../img/background.jpg);
+    background-size: cover
 }
 
 .nav-wrapper {
     background-color: #202020;
+}
+
+a {
+    font-family: 'Bangers', cursive;
+    color: rgb(255, 129, 4) !important;
+    font-size: 25px;
 }
 
 ul li a {
@@ -47,4 +56,13 @@ input {
     width: 45px;
     height: 65px;
     margin-left: 80px;
+}
+
+#slide {
+    width: 40%;
+    height: 40%;
+}
+
+.carousel {
+    height: 100vh;
 }

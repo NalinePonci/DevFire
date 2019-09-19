@@ -19,8 +19,7 @@
             <!--Menu-->
             <img src="img/logofogo.png" class="logo">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">PAGINA INICIAL</a></li>
-                <li><a href="#">MEU PERFIL</a></li>
+        <li> <a class="brand-logo center" >Dev Fire</a></li>
                 <!--modal Login-->
                 <li><a data-target="modal1" class="modal-trigger" href="#modal1"><i class="medium material-icons">person</i></a></li>
                 <div id="modal1" class="modal">
@@ -70,7 +69,15 @@
             </ul>
         </div>
     </nav>
-
+    <!-- SLIDE CAROUSEL -->
+    <div class="carousel">
+        <a id="slide" class="carousel-item" href="#one!"><img src="img/slide2.jpg"></a>
+        <a id="slide" class="carousel-item" href="#two!"><img src="img/slide1.jpg"></a>
+        <a id="slide" class="carousel-item" href="#three!"><img src="img/slide3.jpg"></a>
+        <a id="slide" class="carousel-item" href="#four!"><img src="img/slide6.jpg"></a>
+        <a id="slide" class="carousel-item" href="#five!"><img src="img/slide4.jpg"></a>
+    </div>
+    <!-- FIM CAROUSEL -->
     <script src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
