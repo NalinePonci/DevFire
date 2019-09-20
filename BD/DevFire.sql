@@ -8,6 +8,7 @@ create table usuario(
     nivel int,
     statusUsuario char(1), 
 	sexo char(1),
+    SO char(1),
     email varchar(100),
     senha char(40),
     foto varchar(37)

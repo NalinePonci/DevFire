@@ -1,10 +1,24 @@
+/* IMPORTAÇÃO DE FONTE */
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+/* BODY DO INDEX.PHP */
+
 body {
     background-color: black;
     overflow: hidden;
     background-size: cover;
 }
+
+.logo {
+    width: 45px;
+    height: 65px;
+    margin-left: 80px;
+}
+
+
+/* MENU DO NAVBAR.PHP */
 
 .nav-wrapper {
     background-color: #202020;
@@ -22,6 +36,12 @@ ul li a {
     font-size: 25px;
 }
 
+
+/* ======================== */
+
+
+/* MODAL DO LOGIN */
+
 #modal1 {
     background-color: #363636;
     width: 350px;
@@ -31,10 +51,26 @@ option:hover {
     background-color: #363636;
 }
 
+
+/* =============================== */
+
+
+/* MODAL DO CADASTRO */
+
 #modal2 {
     background-color: #363636;
     width: 400px;
 }
+
+input[type=radio] {
+    user-select: none
+}
+
+
+/* =============================== */
+
+
+/* ESTILIZAÇÃO DE INPUTS E TITULOS */
 
 h1 {
     font-family: 'Amatic SC', cursive;
@@ -51,11 +87,11 @@ input {
     color: white
 }
 
-.logo {
-    width: 45px;
-    height: 65px;
-    margin-left: 80px;
-}
+
+/* =================== */
+
+
+/* CAROUSEL */
 
 #slide {
     width: 40%;
@@ -66,6 +102,5 @@ input {
     height: 100vh;
 }
 
-input[type=radio] {
-    user-select: none
-}
+
+/* ============= */
