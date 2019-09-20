@@ -1,0 +1,10 @@
+ul li a{
+    display:list-item;
+    margin-left:50%
+
+}
+.linuxMenu{
+    width: 50px;
+    height: 100%;
+    background-color:black
+}

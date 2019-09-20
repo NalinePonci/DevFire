@@ -11,7 +11,7 @@
     <nav>
         <!--conexao com o banco-->
         <?php
-        require_once 'conexao.php'
+        // require_once 'conexao.php'
         ?>
 
         <div class="nav-wrapper">
