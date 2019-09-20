@@ -11,13 +11,12 @@
 
 </body>
 <div class="linuxMenu">
-   
-<div class="nav-wrapper left">
+    <div class="nav-wrapper left">
         <ul class="right hide-on-med-and-down">
-            <li id="m1"><a href="#"><i class="material-icons">search</i></a></li>
-            <li><a href="#"><i class="material-icons">view_module</i></a></li>
-            <li><a href="#"><i class="material-icons">refresh</i></a></li>
-            <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            <li><a id="m1" href="index.php"><img id="img1" src="img/fireMenu.png"></a></li>
+            <li><a id="m2" href="#"><img id="img1" src="img/setingMENU.png"></a></li>
+            <li><a id="m3" href="#"><img id="img1" src="img/userMenu.png"></a></li>
+            <li class="LOG"><a id="m4" href="#"><img id="img1"  src="img/door.png"></a></li>
         </ul>
     </div>
 </div>

@@ -19,7 +19,7 @@
             <!--Menu-->
             <img src="img/logofogo.png" class="logo">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li> <a class="brand-logo center">DevFire</a></li>
+                <li> <a href="navLinux.php" class="brand-logo center">DevFire</a></li>
                 <!--modal Login-->
                 <li><a data-target="modal1" class="modal-trigger" href="#modal1"><i class="medium material-icons">person</i></a></li>
                 <div id="modal1" class="modal">
