@@ -4579,6 +4579,7 @@ small {
 }
 
 .card-panel {
+    
     -webkit-transition: -webkit-box-shadow .25s;
     transition: -webkit-box-shadow .25s;
     transition: box-shadow .25s;
@@ -4590,6 +4591,7 @@ small {
 }
 
 .card {
+    
     position: relative;
     margin: .5rem 0 1rem 0;
     background-color: #fff;
@@ -4684,7 +4686,7 @@ small {
 .card.horizontal .card-image img {
     border-radius: 2px 0 0 2px;
     max-width: 100%;
-    width: auto
+    width: auto;
 }
 
 .card.horizontal .card-stacked {
@@ -4722,6 +4724,7 @@ small {
 
 .card .card-image {
     position: relative
+
 }
 
 .card .card-image img {
@@ -4732,7 +4735,7 @@ small {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100%
+    width: 100%;
 }
 
 .card .card-image .card-title {
@@ -6567,12 +6570,8 @@ textarea.materialize-textarea+label:after,
     transition: .3s color
 }
 
-textarea {
-    width: 100%;
-    height: 3rem;
-    background-color: transparent
-}
 
+/* 
 textarea.materialize-textarea {
     line-height: normal;
     overflow-y: hidden;
@@ -6581,7 +6580,7 @@ textarea.materialize-textarea {
     min-height: 3rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
-}
+} */
 
 .hiddendiv {
     visibility: hidden;

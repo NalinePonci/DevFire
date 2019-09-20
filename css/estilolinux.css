@@ -1,6 +1,43 @@
-body{
+body {
     background-color: rgb(71, 67, 67)
 }
+
+.linuxMenu {
+    position: fixed;
+}
+
+.FotoUser {
+    margin-left: 10%;
+}
+
+.Perfil {
+    width           : 16%;
+    height          : 20%;
+    background-color: black;
+    position        : relative;
+    border-radius   : 5%
+}
+
+.text {
+    margin-left: 20%;
+    margin-top : -15.5%;
+    position   : relative
+}
+
+textarea {
+    width : 80%;
+    height: 20%;
+    resize: none;
+
+}
+
+
+#card1 {
+    border-radius: 25px;
+    margin-top: 5%;
+    width     : 105%;
+}
+
 ul li a {
     display    : list-item;
     margin-left: 20%;
@@ -11,13 +48,15 @@ ul li a {
     width           : 70px;
     height          : 100%;
     background-color: rgba(0, 0, 0, 0.397);
-    
+
 }
-.LOG{
+
+.LOG {
     margin-top: 55vh;
 }
+
 #m1 {
-    border-radius: 5%;
+    border-radius     : 5%;
     width             : 100%;
     padding           : 5px;
     background-color  : rgba(241, 140, 8, 0.397);
@@ -27,7 +66,7 @@ ul li a {
 }
 
 #m2 {
-    border-radius: 5%;
+    border-radius     : 5%;
     width             : 100%;
     padding           : 5px;
     background-color  : rgba(255, 8, 8, 0.397);
@@ -37,7 +76,7 @@ ul li a {
 }
 
 #m3 {
-    border-radius: 5%;
+    border-radius     : 5%;
     width             : 100%;
     padding           : 4px;
     background-color  : rgba(8, 43, 241, 0.356);
@@ -47,7 +86,7 @@ ul li a {
 }
 
 #m4 {
-    border-radius: 5%;
+    border-radius     : 5%;
     width             : 100%;
     padding           : 5px;
     background-color  : rgba(255, 255, 255, 0.397);
