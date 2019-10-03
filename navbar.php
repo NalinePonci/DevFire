@@ -9,10 +9,10 @@
 
 <body>
     <nav>
-        
+
         <!--conexao com o banco-->
         <?php
-        //require_once 'conexao.php'
+        require_once 'conexao.php'
         ?>
 
         <div class="nav-wrapper">
@@ -26,7 +26,7 @@
                     <div class="modal-content">
                         <!-- inicio do login-->
                         <h1>Login</h1>
-                        <form class="formLogin" method="POST" action="#">
+                        <form class="formLogin" method="POST" action="login.php">
                             <input autocomplete="off" class="inputLogin" type="email" name="email" placeholder="E-mail">
                             <input class="inputLogin " type="password" name="senha" placeholder="Senha">
                             <input type="submit" value="Entrar" name="login" id="btnLogar" class="btn btnEntrar">
@@ -73,6 +73,8 @@
                             </p>
                             <!-- finalizar cadastro-->
                             <input type="submit" value="Finalizar Cadastro" name="fimCadastro" id="btnLogar" class="btn btnFinalizar right"> <br>
+
+
                         </form>
                         <!-- fim do cadastro-->
                     </div>
@@ -109,15 +111,75 @@ if (isset($_POST["fimCadastro"])) {
     // $query = "INSERT INTO `website`.`usuario` (`nomeUsuario`, `nivel`, `statusUsuario`, `sexo`,'so',`email`, `senha`) 
     //                         VALUES ('$nome', '1', '1', '$sexo','$SO', '$email', '$senha')";
 
+
+
+    $verifEmail = "SELECT email FROM usuario WHERE email = '$email'";
+    $verifEmail = mysqli_query($conexao, $verifEmail);
+    if (mysqli_num_rows($verifEmail) >= 1) {
+        echo "
+<script>
+alert('E-mail já cadastrado!');
+location.href='index.php';
+</script>
+  ";
+        exit;
+    } else if (empty($verifEmail)) {
+
+        echo "campo vazio";
+    } else if (strlen($email) < 4) {
+        echo "
+<script>
+alert('E-mail muito curto');
+location.href='index.php';
+</script>
+";
+        exit;
+    } else if (strlen($nome) < 2) {
+        echo "
+<script>
+alert('Nome muito pequeno');
+location.href='index.php';
+</script>
+";
+        exit;
+    } else if (strlen($nome) > 100) {
+        echo "
+<script>
+alert('Nome muito grande');
+location.href = 'index.php';
+</script>
+";
+        exit;
+    } else if (strlen($email) > 100) {
+        echo "
+<script>
+alert('E-mail muito grande');
+location.href = 'index.php';
+</script>
+";
+        exit;
+    }
+    $senha = md5($senha);
+
+    // $query = "INSERT INTO usuario (nomeUsuario, nivel, statusUsuario, sexo, email, senha, foto) 
+    //                                                             VALUES ('$nome' , 1 , 1 , '$sexo' , '$email' , '$senha' , '$imgName')";
+    // $queryexec = mysqli_query($conexao, $query);
     $query = "INSERT INTO `website`.`usuario` (`nomeUsuario`, `nivel`, `statusUsuario`, `sexo`, `SO`, `email`, `senha`) 
-    VALUES ('$nome', '1', '1', '$sexo', '$SO', '$email', '$senha')";
+VALUES ('$nome', '1', '1', '$sexo', '$SO', '$email', '$senha')";
 
     $queryexec = mysqli_query($conexao, $query);
+    echo "
+            <script>
+                alert('Cadastro finalizado');
+                location.href = 'index.php';
+            </script>
+        ";
+    $idUsuario = "SELECT * FROM usuario WHERE email = '$email'";
+    $idUsuario = mysqli_query($conexao, $idUsuario);
+    $dados = mysqli_fetch_array($idUsuario);
 
-    echo    "<script>
-                    alert('Cadastro finalizado');
-                    location.href = 'index.php';
-            </script>";
+    $_SESSION['logadoOk'] = 1;
+    $_SESSION['dadosUser'] = $dados;
 }
 
 ?>

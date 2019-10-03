@@ -1,5 +1,6 @@
 <?php
 
-    $conexao = mysqli_connect('localhost:3306' , 'root' , '1234' , 'WebSite') or die("Erro na conexão");
 
-?>
+
+
+$conexao = mysqli_connect('localhost:3306', 'root', '', 'WebSite') or die("Erro na conexão");

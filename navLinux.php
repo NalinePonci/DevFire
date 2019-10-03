@@ -2,19 +2,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilolinux.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
-<link rel="stylesheet" href="css/estilolinux.css" type="text/css">
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <body>
+
     <!--Menu do linux  -->
     <div class="linuxMenu">
         <div class="nav-wrapper left">
             <ul class="right hide-on-med-and-down">
                 <!--ICONS DO MENU LINUX  -->
                 <li>
-                    <a id="m1" href="index.php">
+                    <a id="m1" href="">
                         <!--ICONE FOGO COM SVG  -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="#ed694a" d="M373.499 163.809c-10.67-11.649-27.258-27.372-34.315 8.13-2.4 12.071-8.007 21.376-12.812 28.868-5.179-26.212-20.761-53.343-35.443-71.636-5.494-6.844-24.988-34.051-28.733-79.567-.559-6.793-8.628-9.983-13.675-5.401-48.232 43.784-74.706 104.002-75.689 171.795 0 0-20.084-16.929-30.995-48.423-2.938-8.481-14.308-10.099-19.241-2.6a75.358 75.358 0 0 0-2.617 4.282c-37.213 65.8-55.114 145.705-38.565 220.045 27.67 124.497 210.704 159.303 307.603 81.054 94.805-76.556 64.669-219.045-15.518-306.547z" />
@@ -40,21 +42,12 @@
                 <li><a id="m2" href="#"><img id="img" src="img/setingMENU.png"></a></li>
                 <li><a id="m3" href="#"><img id="img" src="img/userMenu.png"></a></li>
                 <!-- ICON DE SAIR -->
-                <li class="LOG"><a id="m4" href="#"><img id="img" src="img/door.png"></a></li>
+                <li class="LOG"><a id="m4" href="deslogar.php"><img id="img" src="img/door.png"></a></li>
             </ul>
         </div>
     </div>
 
-    <div class="container">
-        <div class="card-panel">
-            <p>texttexttexttexttexttexttext
-                textvtexttexttexttexttexttexttext
-                textvtexttexttexttexttextvtext
-                texttexttexttexttext
-                texttexttext</P>
-
-        </div>
-    </div>
+    
 
 </body>
 
